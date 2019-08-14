@@ -1,3 +1,6 @@
+'''Solution to read text file and find out sorted anagrams from the text file.'''
+
+
 def read_anagram(file_name):
     a=open(file_name,"r")
     with a as file_name:
