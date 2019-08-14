@@ -21,6 +21,15 @@ def read_anagram(file_name):
 	                	              
 read_anagram("anagram.txt")
 
+#Anagram.txt(input file)
 
-    	 
+ '''nectars,recants
+catered,catered
+darters,tradera
+claimed,decimal
+detains,instiad
+listen,silent
+kale,lake
+lapse,pleaa
+repaints,paanters'''   	 
 
