@@ -1,0 +1,26 @@
+def read_anagram(file_name):
+    a=open(file_name,"r")
+    with a as file_name:
+        required_list=[]
+        for lines in a:
+            lines=lines.strip()
+            required_list.append(lines.split(','))
+        print(required_list)
+
+        output=[]
+        for i in range(len(required_list)):
+        	for j in range(0,1):
+        		if sorted(required_list[i][0])==sorted(required_list[i][1]):
+        			temp=required_list[i][0]
+        			required_list[i][0]=required_list[i][1]
+        			required_list[i][1]=temp
+        			output.append("Anagrams")
+        		else:
+        			output.append("Not anagrams")
+        print(output)
+	                	              
+read_anagram("anagram.txt")
+
+
+    	 
+
