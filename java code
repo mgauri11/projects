@@ -1,0 +1,49 @@
+/*java code read a general text file containing integers numbers along with other general characters(eg.letters).An integer
+number is defined as a consecutive sequence of digits,separated by any non-digit character.(Assuming that all the integer
+numbers in the text file and their sum can be represented using 32-bit.*/
+
+
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Date;
+import java.io.FileReader;
+import java.io.*;
+
+public class Dill1 {
+
+    public static void main( String[] args ) {
+    	
+    	
+		try {
+			
+		    Scanner user = new Scanner( System.in ); 
+		    String  inputFileName;
+
+		    // prepare the input file from user.
+		    System.out.print("Input File Name: ");
+		    inputFileName = user.nextLine();
+		    File input = new File( inputFileName );      
+		    Scanner scan = new Scanner( input );    
+			
+		   int total=0;
+			while (scan.hasNext()) {
+	    	    if (scan.hasNextInt()) { // check if next token is an int
+	    	    	total += scan.nextInt();
+	    	    } else {
+	    	        scan.next(); // else read the next token
+	    	    }
+	    	    
+	    	}
+		
+			System.out.printf( "Sum is %d %n", total );
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+		
+
+}
+}
