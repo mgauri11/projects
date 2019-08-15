@@ -1,2 +1,2 @@
 # projects
-School courseworks
+Python and Java codes. 
